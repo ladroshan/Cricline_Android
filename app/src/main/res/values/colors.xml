@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFA300</color>
+    <!--   <color name="colorPrimaryDark">#FA5D0F</color>-->
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="tab_color">#99D6E3</color>
+
+    <color name="text_color">#2698D7</color>
+    <color name="text_color_bottom_bar">#878787</color>
+    <color name="newtextcolor">#727272</color>
+    <color name="newicontcolor">#727272</color>
+
+
+    <color name="bg_color">#ffECECEC</color>
+    <color name="newusenamecolor">#ff969696</color>
+    <color name="newregcolor">#ff666666</color>
+    <color name="botombartextcolor">#ff606060</color>
+
+    <color name="colorTransBg">#92000000</color>
+    <color name="colorTransmap">#502698D7</color>
+
+    <color name="orange">#ff5722</color>
+    <color name="teal">#009688</color>
+    <color name="teal2">#f45221</color>
+    <color name="lb_browse_header_color">#FFFFFF</color>
+    <color name="blue">#21bcf4</color>
+    <color name="green">#64dd17</color>
+    <color name="yellow">#FFEE58</color>
+
+
+
+
+</resources>

@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_1sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="SMART_BANNER"
+            android:background="@android:color/transparent"
+            app:adUnitId="ca-app-pub-3201092669740213/6706622737"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/card_crick"
+            />
+
+
+
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardUseCompatPadding="false"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="visible"
+            android:id="@+id/card_crick"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_7sdp"
+
+                android:gravity="center">
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/l2">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/icc_cricket"
+                        android:maxLines="2"
+                        android:textAppearance="@style/icc_cricket"
+                        android:gravity="left"
+                        />
+
+                    <TextView
+                        android:id="@+id/match_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/match_41_en"
+                        android:textAppearance="@style/match_41_en"
+                        android:gravity="top"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+
+                    <TextView
+
+                        android:id="@+id/match_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="0dp"
+
+                        android:layout_marginTop="0dp"
+                        android:text="@string/jul_2019"
+                        android:textAppearance="@style/jul_2019"
+                        android:gravity="right"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:id="@+id/match_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/pm"
+                        android:textAppearance="@style/pm"
+                        android:gravity="right|top"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/l1"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/overview"
+                        android:textAppearance="@style/overview"
+                        android:gravity="top"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/match_overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/nz_need_221"
+                        android:textAppearance="@style/nz_need_221"
+                        android:gravity="top"
+
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/market_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/market_rate"
+                    android:textAppearance="@style/market_rate"
+                    android:gravity="left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fav_team"
+                    />
+
+                <TextView
+                    android:id="@+id/fav_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="@string/fav_team_"
+                    android:textAppearance="@style/fav_team_"
+                    android:gravity="left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/l3"
+                    />
+                <LinearLayout
+                    android:id="@+id/l6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_2sdp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/market_rate"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/team_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/eng"
+                        android:textAppearance="@style/eng"
+                        android:gravity="top"
+                        android:visibility="gone"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/rate_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@color/green"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:paddingBottom="@dimen/_1sdp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/some_id41"
+                        android:textAppearance="@style/some_id41"
+                        android:gravity="top"
+                        />
+
+                    <TextView
+                        android:id="@+id/team_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="19dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:text="@string/nz"
+                        android:visibility="gone"
+                        android:textAppearance="@style/nz" />
+                    <TextView
+                        android:id="@+id/rate_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/some_id74"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:paddingBottom="@dimen/_1sdp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/blue"
+                        android:textAppearance="@style/some_id74"
+                        android:gravity="top"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/l7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/l6"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <!--<ImageView
+                        android:id="@+id/img_rate"
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_progress_line"/>-->
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/session_rat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="@string/session_rat"
+                    android:textAppearance="@style/session_rat"
+                    android:gravity="top"
+
+                    app:layout_constraintTop_toBottomOf="@+id/l7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/l8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/session_rat"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="left|center_vertical"
+                        android:background="@color/blue"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/teama_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/eng_rate"
+                            android:textAppearance="@style/eng_rate"
+                            android:gravity="top"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_9sdp"
+                            android:visibility="gone"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/team_a_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:textColor="@android:color/white"
+                            android:text="@string/some_id43"
+                            android:textAppearance="@style/some_id43"
+                            android:gravity="top"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="2dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:layout_marginLeft="1dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/teamb_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/nz"
+                            android:textAppearance="@style/nz43"
+                            android:gravity="top"
+                            android:textSize="@dimen/_9sdp"
+                            android:textColor="@android:color/white"
+                            android:visibility="gone"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/team_b_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:textColor="@android:color/white"
+                            android:text="@string/some_id43"
+                            android:textAppearance="@style/some_id43"
+                            android:gravity="top"
+                            android:textSize="@dimen/_10sdp"
+                            android:padding="2dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/over_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/over"
+                            android:textAppearance="@style/over"
+                            android:gravity="top"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/overrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/some_id43"
+                            android:textAppearance="@style/some_id43"
+                            android:gravity="top"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:id="@+id/run_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/run"
+                            android:textAppearance="@style/run"
+                            android:gravity="top"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/runrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/some_id43"
+                            android:textAppearance="@style/some_id43"
+                            android:gravity="top"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:id="@+id/ball_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/ball"
+                            android:textAppearance="@style/ball"
+                            android:gravity="top"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/ballrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/some_id43"
+                            android:textAppearance="@style/some_id43"
+                            android:gravity="top"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/lay_current_ball"
+    app:layout_constraintTop_toBottomOf="@+id/l8"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp"
+    android:background="#FFF0D6"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/current_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+
+        android:text="@string/current_bal"
+        android:textAppearance="@style/current_bal"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/l8"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <!-- wicket -->
+    <TextView
+        android:id="@+id/bowlertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+
+        android:text="@string/wicket"
+        android:textAppearance="@style/wicket"
+        android:gravity="center"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/current_bal"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/bat_batsman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:text="@string/batsman_a_9"
+        android:textAppearance="@style/batsman_a_9"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@+id/bowlertitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        />
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layout_runs"
+                    app:layout_constraintBottom_toTopOf="@+id/session_rat"
+                    app:layout_constraintTop_toBottomOf="@+id/l2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/l4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/l2"
+                        app:layout_constraintEnd_toStartOf="@+id/l5"
+                        app:layout_constraintBottom_toTopOf="@+id/session_rat">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_bating"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/ic_uk"/>
+
+                            <TextView
+                                android:id="@+id/teama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:text="@string/eng"
+                                android:textAppearance="@style/eng"
+                                android:gravity="center"
+                                android:layout_gravity="center_vertical"
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/some_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/some_id"
+                            android:textAppearance="@style/some_id"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+                        <!-- 50.0 -->
+                        <TextView
+                            android:id="@+id/overs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/someid"
+                            android:textAppearance="@style/someid"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:layout_constraintBottom_toTopOf="@+id/session_rat"
+                        app:layout_constraintTop_toBottomOf="@+id/l2"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_bowling"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/ic_nz"/>
+
+                            <TextView
+                                android:id="@+id/teamb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:text="@string/nz"
+                                android:textAppearance="@style/eng"
+                                android:gravity="center"
+                                android:layout_gravity="center_vertical"
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/scoreb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text= "@string/some_id1"
+                            android:textAppearance="@style/some_id"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+                        <!-- 50.0 -->
+                        <TextView
+                            android:id="@+id/sessionover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/someid1"
+                            android:textAppearance="@style/someid"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:visibility="gone"
+                    android:background="#DDDDDD"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/match_detai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/match_detai"
+                    android:textAppearance="@style/matchdetail"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+
+                    />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_5sdp"
+            card_view:cardUseCompatPadding="false"
+            card_view:cardElevation="@dimen/_7sdp"
+            card_view:cardCornerRadius="@dimen/_7sdp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    >
+
+
+
+
+        <com.agrawalsuneet.loaderspack.loaders.CurvesLoader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:curves_animDuration="1000"
+            app:curves_curveColor="@color/colorPrimary"
+            app:curves_curveSweepAngle="270"
+            app:curves_curveWidth="1dp"
+            app:curves_distanceBetweenCurves="5dp"
+            app:curves_interpolator="@android:anim/linear_interpolator"
+            app:curves_noOfCurves="5"
+            app:curves_outermostCurveRadius="20dp"
+            android:layout_gravity="center"/>
+
+
+
+
+</FrameLayout>

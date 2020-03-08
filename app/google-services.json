@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "607372059751",
+    "firebase_url": "https://crickline123.firebaseio.com",
+    "project_id": "crickline123",
+    "storage_bucket": "crickline123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607372059751:android:ae6689688e3d2c7cb060c2",
+        "android_client_info": {
+          "package_name": "com.cricket.line"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607372059751-bnkg6et97mdsngnvppn0p490bqt76r4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cricket.line",
+            "certificate_hash": "5d7e1b17d0a803311678eaf5eefb85b8d98ee372"
+          }
+        },
+        {
+          "client_id": "607372059751-q8n9bimbe1ptnavn9er79bggg5q5iagi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAirg2IEjD5AST4S47BkdxOFXE20zX4FyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607372059751-q8n9bimbe1ptnavn9er79bggg5q5iagi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "607372059751-c8u40p7rdjnaeju0vgr4mcbim5krj506.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Com.cricket.livecricketscoreline"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607372059751:android:cc3459be8b51c5ceb060c2",
+        "android_client_info": {
+          "package_name": "com.cricket.livecricketscoreline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607372059751-27090ciub41sf3sgisv3ljkgom7rp990.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cricket.livecricketscoreline",
+            "certificate_hash": "5d7e1b17d0a803311678eaf5eefb85b8d98ee372"
+          }
+        },
+        {
+          "client_id": "607372059751-q8n9bimbe1ptnavn9er79bggg5q5iagi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAirg2IEjD5AST4S47BkdxOFXE20zX4FyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607372059751-q8n9bimbe1ptnavn9er79bggg5q5iagi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "607372059751-c8u40p7rdjnaeju0vgr4mcbim5krj506.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Com.cricket.livecricketscoreline"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

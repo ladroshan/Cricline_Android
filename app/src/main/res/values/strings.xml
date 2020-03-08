@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CricLine</string>
+
+    <string name="icc_cricket">Match</string>
+
+    <string name="match_41_en">Match </string>
+    <string name="jul_2019">
+date
+</string>
+    <string name="pm">
+time
+</string>
+
+    <string name="overview">
+
+Overview
+</string>
+
+    <string name="nz_need_221">
+
+Match Details
+</string>
+
+
+    <string name="eng">
+
+team
+</string>
+
+    <string name="some_id">
+
+0/0
+</string>
+
+    <string name="someid">
+
+0.0
+</string>
+
+    <string name="some_id1">
+
+0/0
+</string>
+
+    <string name="someid1">
+
+0.0
+</string>
+
+    <string name="match_41_en1">
+
+Match
+</string>
+    <string name="nz">
+
+team
+</string>
+
+
+    <string name="market_rate">
+
+Market rate
+</string>
+    <string name="some_id41">
+
+0%
+</string>
+
+    <string name="some_id74">
+
+0%
+</string>
+
+
+    <string name="session_rat">
+
+Session
+</string>
+
+
+    <string name="eng_rate">
+
+team
+</string>
+
+    <string name="some_id43">
+
+0
+</string>
+    <string name="over">
+
+Over
+</string>
+
+    <string name="run">
+
+Run
+</string>
+
+    <string name="current_bal">
+
+current ball
+</string>
+
+
+    <string name="wicket">
+
+wicket
+</string>
+
+    <string name="batsman_a_9">
+
+batsman
+</string>
+
+
+    <string name="live_matche">
+
+Live Matches
+</string>
+
+    <string name="view_all">
+
+View all
+</string>
+
+    <string name="upcoming_ma">
+
+Upcoming Matches
+</string>
+
+
+    <string name="vs">
+
+vs
+</string>
+
+    <string name="match_detai">
+
+Match Details
+</string>
+
+    <string name="icc_cricket1">
+
+Cric Line
+</string>
+    <string name="jul_20191">
+
+date
+</string>
+
+
+    <string name="pm1">
+
+time
+</string>
+
+    <string name="england">
+
+Team
+</string>
+
+    <string name="new_zealand">
+
+Team
+</string>
+    <string name="overview1">
+
+Overview
+</string>
+    <string name="batsman">
+
+Batsman
+</string>
+
+    <string name="matt_henry">
+
+
+</string>
+
+    <string name="tom_latham">
+
+
+</string>
+    <string name="runs">
+
+Runs
+</string>
+    <string name="some_id_run">
+
+0
+</string>
+
+
+    <string name="balls">
+
+Balls
+</string>
+
+    <string name="bowler">
+
+Bowler
+</string>
+
+    <string name="jofra_arche">
+
+bowler
+</string>
+
+    <string name="wickets">
+
+wickets
+</string>
+
+    <string name="wicket1">
+
+wicket
+</string>
+    <string name="anand_b">
+
+Anand B
+</string>
+
+    <string name="abongir_gma">
+
+abongir@gmail.com | 9988776655
+</string>
+
+    <string name="joined_6_mo">
+
+joined 6 months ago
+</string>
+
+    <string name="profile">
+
+Profile
+</string>
+
+    <string name="settings">
+
+Settings
+</string>
+
+    <string name="disclaimer">
+
+Disclaimer
+</string>
+
+    <string name="ball">
+
+Ball
+</string>
+
+    <string name="fav_team_">
+
+Fav team:
+</string>
+
+
+    <string name="last_6_ball">
+
+Last 6 balls
+</string>
+
+    <string name="over_12_2">
+
+over
+</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_text">We provide market rate and session based on analysis  and knowledge that we have collected from our various sources. We do not support/encourage any type of betting either legal or illegal.we are not responsible if betting is not legal in the country of our respective users and/or the respective user do any kind of illegal  betting thereof.This app is not for betting or supporting betting,this app is meant only for fun and entertainment purpose.</string>
+
+</resources>
