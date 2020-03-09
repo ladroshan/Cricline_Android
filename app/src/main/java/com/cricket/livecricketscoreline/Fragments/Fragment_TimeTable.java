@@ -176,9 +176,25 @@ public class Fragment_TimeTable extends Fragment {
         MobileAds.initialize(getActivity(),
                 "ca-app-pub-3201092669740213~8019704401");
 
-        AdView mAdView = (AdView)view. findViewById(R.id.adView);
+        /*AdView mAdView = (AdView)view. findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+
+        mInterstitialAd = new InterstitialAd(getActivity());
+        mInterstitialAd.setAdUnitId("ca-app-pub-1529332403265862/8651379356");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd1 = new InterstitialAd(getActivity());
+        mInterstitialAd1.setAdUnitId("ca-app-pub-1529332403265862/8651379356");
+        mInterstitialAd1.loadAd(new AdRequest.Builder().build());*/
+
+
+        AdView mAdView = (AdView)view. findViewById(R.id.adView);
+
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
 
         mInterstitialAd = new InterstitialAd(getActivity());
@@ -189,20 +205,6 @@ public class Fragment_TimeTable extends Fragment {
         mInterstitialAd1.loadAd(new AdRequest.Builder().build());
 
 
-
-
-        /*mInterstitialAd = new InterstitialAd(getActivity());
-
-        mInterstitialAd.setAdUnitId("ca-app-pub-3201092669740213/6706622737");
-        mInterstitialAd1 = new InterstitialAd(getActivity());
-        mInterstitialAd1.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        AdRequest adRequest1 = new AdRequest.Builder().build();
-        AdRequest adRequest2 = new AdRequest.Builder().build();
-
-
-        mInterstitialAd.loadAd(adRequest1);
-        mInterstitialAd1.loadAd(adRequest2);
-*/
 
 
 
@@ -418,7 +420,7 @@ public class Fragment_TimeTable extends Fragment {
 
 
 
-            /*String flag1 = movieList.getBating_team_flag();
+            String flag1 = movieList.get(position).getBating_team_flag();
             if(!flag1.equalsIgnoreCase("")) {
                 Picasso.get()
                         .load(flag1)
@@ -430,16 +432,16 @@ public class Fragment_TimeTable extends Fragment {
             {
                 Picasso.get().load(R.drawable.blue_bg)
                         .placeholder(R.drawable.ic_landscape_image)
-                         .error(R.drawable.blue_bg)
+                        .error(R.drawable.blue_bg)
                         .into(holder.img_bating);
             }
 
-            String flag2 = movieList.getBowling_team_flag();
+            String flag2 = movieList.get(position).getBowling_team_flag();
             if(!flag2.equalsIgnoreCase("")) {
                 Picasso.get()
                         .load(flag2)
                         .placeholder(R.drawable.ic_landscape_image)
-                       .error(R.drawable.red_bg)
+                        .error(R.drawable.red_bg)
                         .into(holder.img_bowling);
             }
             else
@@ -449,7 +451,7 @@ public class Fragment_TimeTable extends Fragment {
                         .placeholder(R.drawable.ic_landscape_image)
                         .error(R.drawable.red_bg)
                         .into(holder.img_bowling);
-            }*/
+            }
 
 
         }

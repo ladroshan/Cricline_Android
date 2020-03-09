@@ -133,7 +133,7 @@
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:adSize="BANNER"
+        app:adSize="SMART_BANNER"
         android:background="@android:color/transparent"
         app:adUnitId="ca-app-pub-3201092669740213/6706622737"
 
